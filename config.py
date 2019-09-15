@@ -6,6 +6,7 @@ class Config:
   where the applications configuarations are
   '''
   SECRET_KEY = os.environ.get('SECRET_KEY')
+  SQLALCHEMY_DATBASE_URI = 'postgresql+psycopg2://emmanuel:lilfranken@localhost/pitch'
 
 class ProdConfig(Config):
   '''
