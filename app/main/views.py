@@ -1,5 +1,6 @@
-from flask import render_template
-from forms import SignUpForm,LoginForm
+from flask import render_template,url_for
+from .forms import SignUpForm,LoginForm
+from . import main
 
 
 @main.route('/')

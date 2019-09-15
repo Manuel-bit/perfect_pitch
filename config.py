@@ -1,9 +1,11 @@
 import os
-class config:
+
+
+class Config:
   '''
   where the applications configuarations are
   '''
-  pass
+  SECRET_KEY = os.environ.get('SECRET_KEY')
 
 class ProdConfig(Config):
   '''
