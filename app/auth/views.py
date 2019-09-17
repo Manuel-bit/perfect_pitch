@@ -1,5 +1,5 @@
 from flask import render_template,url_for,flash,redirect
-from .forms import SignUpForm,LoginForm
+from .forms import LoginForm
 from . import auth
 
 @auth.route('/login',methods=['GET','POST'])
